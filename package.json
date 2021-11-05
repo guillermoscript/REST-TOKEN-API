@@ -1,0 +1,23 @@
+{
+  "name": "eth-rest-token-api",
+  "version": "1.0.0",
+  "description": "a restfull api token for erc-20 and others eth standars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Guillermo Marin",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ethers": "^5.5.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "hardhat": "^2.6.8",
+    "nodemon": "^2.0.14"
+  }
+}
