@@ -7,7 +7,7 @@ function createWallet() {
 }
 
 function getWalletFromPrivate(privateKey) {
-    const Wallet = ethers.Wallet(privateKey);
+    const Wallet = new ethers.Wallet(privateKey);
     console.log(Wallet)
     return Wallet
 }
@@ -20,5 +20,6 @@ function connectWalletToPovider(Wallet, provider) {
 
 module.exports = {
     getWalletFromPrivate,
-    createWallet
+    createWallet,
+    connectWalletToPovider
 }

@@ -14,6 +14,7 @@ module.exports = async ({ app }) => {
 
     app.set('port', config.port || 3000)
     app.set('json spaces', 2)
+    app.use(express.json());
 
   
     // ...More middlewares
